@@ -39,8 +39,8 @@ pip install mcp
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/Gorav22/animation_mcp.git
-cd animation-mcp
+git clone https://github.com/Gorav22/Animated_video.git
+cd Animated_video
 ```
 
 ## Integration with Claude
@@ -56,7 +56,24 @@ To integrate the Manim MCP server with Claude, add the following to your `claude
         "/absolute/path/to/manim-mcp-server/src/manim_server.py"
       ],
       "env": {
-        "MANIM_EXECUTABLE": "/Users/[Your_username]/anaconda3/envs/manim2/Scripts/manim.exe"
+        "MANIM_EXECUTABLE": "/Path/to/manim/Scripts/manim.exe"
+      }
+    }
+  }
+}
+```
+
+For cursor, Go to Cursor Settings then MCP then click new a mcp server add this script in mcp.json
+```json
+{
+  "mcpServers": {
+     "animation-server": {
+      "command": "/absolute/path/to/python",
+      "args": [
+        "/absolute/path/to/manim-mcp-server/src/manim_server.py"
+      ],
+      "env": {
+        "MANIM_EXECUTABLE": "/Path/to/manim/Scripts/manim.exe"
       }
     }
   }
