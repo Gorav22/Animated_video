@@ -1,6 +1,4 @@
-# Manim MCP Server
-
-![Manim MCP Demo](Demo-manim-mcp.gif)
+# Animated video MCP Server
 
 
 ## Overview
